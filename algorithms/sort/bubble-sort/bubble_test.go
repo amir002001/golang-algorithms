@@ -14,9 +14,9 @@ func Test_bubbleSort(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Logf("排序前:%+v", tt.a)
+			t.Logf("unsorted:%+v", tt.a)
 			bubbleSort(tt.a)
-			t.Logf("排序后:%+v", tt.a)
+			t.Logf("sorted:%+v", tt.a)
 		})
 	}
 }

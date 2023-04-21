@@ -19,9 +19,9 @@ func Test_qsort(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			t.Logf("排序前:%+v", tt.args.data)
+			t.Logf("before:%+v", tt.args.data)
 			qsort(tt.args.data)
-			t.Logf("排序后:%+v", tt.args.data)
+			t.Logf("after:%+v", tt.args.data)
 		})
 	}
 }
